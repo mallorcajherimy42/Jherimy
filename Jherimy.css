@@ -169,12 +169,8 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background-color: black;
+
   transform-origin: top center;
 
   z-index: -1;
@@ -200,10 +196,13 @@ span {
 }
 .contact-form {
   background-color: rgb(0, 0, 0);
-  padding: 50px 12%;
+  padding: 100px 12%;
   /* Added border-radius */
-
   position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack elements vertically */
 }
 
 .contact-me {
@@ -217,15 +216,18 @@ span {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .input-box {
   margin-bottom: 20px;
+  width: 100%; /* Make input box full width */
+  max-width: 500px; /* Set max width for better readability */
 }
 
 .input-box input,
 .input-box textarea {
-  width: 100%;
+  width: 110%;
   padding: 15px;
+  align-items: center;
+  flex: center;
 
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -239,6 +241,7 @@ span {
 .input-box input:focus,
 .input-box textarea:focus {
   outline: none;
+
   background-color: #e0e0e0;
 }
 
