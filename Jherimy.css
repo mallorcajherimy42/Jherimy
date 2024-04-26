@@ -339,25 +339,6 @@ span {
   font-size: 16px;
   color: #666;
 }
-.Education {
-  padding: 100px 12%;
-  background-color: #f5f5f5;
-  text-align: center;
-}
-
-.Education .heading {
-  font-size: 36px;
-  color: black;
-  margin-bottom: 50px;
-}
-
-.education-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
 .education {
   width: 300px;
   padding: 20px;
@@ -365,6 +346,8 @@ span {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  text-align: center; /* Center align content */
+  margin-bottom: 30px; /* Add some bottom margin */
 }
 
 .education:hover {
@@ -374,9 +357,10 @@ span {
 .education img {
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain; /* Ensure the image doesn't get cropped */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Add some bottom margin */
 }
 
 .education h3 {
